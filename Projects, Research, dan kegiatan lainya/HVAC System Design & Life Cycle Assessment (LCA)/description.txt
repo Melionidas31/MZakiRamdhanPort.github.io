@@ -1,0 +1,6 @@
+HVAC System Design & Life Cycle Assessment (LCA) – leader project
+Cooling Load Analysis: Calculated total cooling requirements, identifying a peak load of 1,020.8 kW and a Sensible Heat Ratio (SHR) of 0.627, highlighting high latent heat (humidity) as a critical design factor.
+
+System Comparative Study: Conducted a technical comparison between a Water-Cooled Chiller system with Variable Air Volume (VAV) and a Rooftop Unit (RTU) system with VAV to optimize air distribution and energy efficiency.
+
+Life Cycle Assessment (LCA): Evaluated both Embodied and Operational Carbon footprints. Analysis revealed that Embodied Carbon accounted for 61% of total emissions (primarily driven by steel materials), while the Water-Cooled Chiller system demonstrated superior efficiency in Operational Carbon reduction compared to the RTU system.

@@ -1,0 +1,8 @@
+Prototype Analysis of Low-Cost Electric Oven 
+Heat Transfer Course Project 
+    • Designed and fabricated a functional prototype oven utilizing upcycled heating elements 
+    (from rice cooker) and auxiliary incandescent lighting. 
+    • Engineered a composite insulation system using aluminum foil, cardboard, and 
+    polystyrene (styrofoam) to minimize heat loss via conduction and radiation. 
+    • Analyzed the heating rate and thermal retention of the chamber to evaluate the 
+    efficiency of the insulation materials. 

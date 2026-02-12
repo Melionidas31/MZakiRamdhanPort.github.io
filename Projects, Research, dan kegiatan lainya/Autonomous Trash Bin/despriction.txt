@@ -1,0 +1,10 @@
+Autonomous Trash Bin: Line Follower Based Automation  
+Capstone Project Leader 
+    • Led the end-to-end development of a mechatronic waste management robot, overseeing 
+    mechanical design, circuit integration, and sensor programming. 
+    • Engineered an automated navigation system using IR sensors (Line Follower) and 
+    microcontroller logic to execute precise waste collection routes. 
+    • Designed the touchless actuation mechanism utilizing Ultrasonic sensors and Servo 
+    motors, enabling automatic lid operation for improved hygiene. 
+    • Conducted performance testing on sensor sensitivity and motor capability, optimizing 
+    the robot’s response time and load-carrying efficiency. 

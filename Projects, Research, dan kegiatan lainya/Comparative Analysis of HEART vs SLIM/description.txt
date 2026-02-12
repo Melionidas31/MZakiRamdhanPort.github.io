@@ -1,0 +1,6 @@
+Comparative Analysis of HEART vs SLIM in Assessing Human Error Probability 
+Project Leader Published in Motivtech Journal (doi.org/10.46574/motivection.v7i1.431)  
+    • Conducted a comparative study of two major Human Reliability Assessment (HRA) 
+    methods: HEART and SLIM, to analyze safety risks in MCAS operations. 
+    • Utilized HEART and SLIM methods to calculate failure likelihood, demonstrating 
+    proficiency in data-driven reliability analysis. 
