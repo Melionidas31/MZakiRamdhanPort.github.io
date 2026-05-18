@@ -4,59 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Zaki Ramdhan | Mechanical Engineering Portfolio</title>
+    <title>M. Zaki Ramdhan | Process Safety, QRA & Data-Driven Engineering</title>
     <meta name="description"
-        content="Portfolio of M. Zaki Ramdhan, a high-achieving Mechanical Engineering undergraduate specializing in Risk Assessment and Fluid Mechanics.">
+        content="Portfolio of M. Zaki Ramdhan, a Mechanical Engineering undergraduate focused on process safety, QRA, reliability engineering, and data-driven risk analysis.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=motion-fix-20260516-2">
 </head>
 
-<body>
-    <div class="background-globes">
-        <div class="globe globe-1"></div>
-        <div class="globe globe-2"></div>
-        <div class="globe globe-3"></div>
+<body class="motion-enabled">
+    <div class="site-backdrop" aria-hidden="true">
+        <div class="backdrop-grid"></div>
+        <div class="backdrop-accent accent-1"></div>
+        <div class="backdrop-accent accent-2"></div>
     </div>
 
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">PORTFOLIO <span class="dot">.</span></a>
+            <a href="#hero" class="logo">Zaki<span>Ramdhan</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact" class="btn-primary">Contact</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Open navigation menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
     <header id="hero" class="hero-section">
+        <div class="hero-kinetic" aria-hidden="true">
+            <div class="kinetic-frame">
+                <span class="kinetic-line line-a"></span>
+                <span class="kinetic-line line-b"></span>
+                <span class="kinetic-line line-c"></span>
+                <span class="kinetic-node node-a"></span>
+                <span class="kinetic-node node-b"></span>
+                <span class="kinetic-node node-c"></span>
+            </div>
+            <div class="kinetic-radar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="kinetic-scan"></div>
+        </div>
         <div class="container">
             <div class="hero-wrapper">
-                <div class="hero-image-container">
-                    <div class="hero-image-wrapper">
-                        <img src="assets/images/profile.jpg.png" alt="M. Zaki Ramdhan" class="hero-image">
-                    </div>
-                </div>
-                <div class="hero-content">
+                <div class="hero-content active">
+                    <span class="eyebrow">Mechanical Engineering Portfolio</span>
                     <h1>M. Zaki Ramdhan</h1>
-                    <h2 class="hero-subtitle">Undergraduate <span class="highlight">Mechanical Engineering</span>
-                    </h2>
-                    <p>High-achieving Mechanical Engineering student (GPA 3.87) bridging classical mechanics with
-                        Artificial Intelligence. Experienced in Risk Assessment (FMEA), CFD Simulation, and AI-Driven
-                        Predictive Maintenance.</p>
+                    <h2 class="hero-subtitle">Process safety, QRA, reliability, and <span
+                            class="highlight">data-driven engineering</span> for safer energy systems.</h2>
+                    <p>Mechanical Engineering undergraduate at Universitas Pertamina combining classical engineering
+                        analysis with data analytics, machine learning, and risk-based decision support for industrial
+                        safety and energy transition problems.</p>
+                    <div class="hero-tags">
+                        <span>Process Safety & QRA</span>
+                        <span>ALOHA</span>
+                        <span>FMEA/RPN</span>
+                        <span>Machine Learning</span>
+                    </div>
                     <div class="hero-btns">
-                        <a href="#contact" class="btn-primary">Get in Touch</a>
-                        <a href="#projects" class="btn-secondary">View Projects</a>
+                        <a href="#projects" class="btn-primary"><i class="fas fa-diagram-project"></i> View Work</a>
+                        <a href="#credentials" class="btn-secondary"><i class="fas fa-certificate"></i> Credentials</a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
@@ -64,13 +83,23 @@
                             <span class="stat-label">GPA</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">Gold</span>
-                            <span class="stat-label">Physics Olympiad</span>
+                            <span class="stat-number">1,215</span>
+                            <span class="stat-label">Hazard Scenarios</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">Published</span>
-                            <span class="stat-label">Research</span>
+                            <span class="stat-label">Safety Research</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/images/profile.jpg.png" alt="M. Zaki Ramdhan" class="hero-image">
+                    </div>
+                    <div class="hero-focus-card">
+                        <span>Career Focus</span>
+                        <strong>Process Safety Engineer, HSE/HSSE Engineer, Reliability & Risk Engineer</strong>
                     </div>
                 </div>
             </div>
@@ -79,41 +108,48 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="eyebrow">Profile</span>
+                <h2 class="section-title">About Me</h2>
+                <p>A mechanical engineering profile sharpened around safety, reliability, risk analysis, and practical
+                    data-driven decision support.</p>
+            </div>
             <div class="about-grid">
                 <div class="about-card glass-card">
                     <h3>Professional Summary</h3>
-                    <p>I am a Mechanical Engineering undergraduate at Universitas Pertamina with a strong focus on
-                        Thermal-Fluid Systems, HVAC Design, and Risk Assessment. My academic journey is marked by
-                        consistent
-                        excellence and leadership in research projects.</p>
-                    <p>I have published research on Quantitative Human Reliability Assessment (HEART and SLIM methods)
-                        and have led innovative projects like the HERO Helmets (PKM-KC). I am seeking to contribute as a
-                        Reliability or Safety Engineer, leveraging my analytical skills, technical knowledge, and
-                        interest in AI-driven engineering.</p>
+                    <p>I am a Mechanical Engineering undergraduate at Universitas Pertamina focused on process safety,
+                        quantitative risk assessment, reliability engineering, and data-driven engineering applications.
+                        My work connects engineering fundamentals with statistical modeling, machine learning, and
+                        decision-support dashboards.</p>
+                    <p>My current research develops ML-based surrogate models for n-Hexane tank overfill hazard zone
+                        prediction using ALOHA simulation outputs. I also have experience in BOP FMEA/RPN risk
+                        assessment, published Human Reliability Assessment research, energy transition modeling, and
+                        engineering calculation templates.</p>
                 </div>
+
                 <div class="education-card glass-card">
                     <h3>Education</h3>
                     <div class="edu-item">
                         <div class="edu-header">
                             <h4>Universitas Pertamina</h4>
-                            <span class="year">2022 – Present</span>
+                            <span class="year">2022 &ndash; Present</span>
                         </div>
                         <p class="role">Bachelor of Mechanical Engineering</p>
                         <ul class="edu-details">
                             <li><strong>GPA:</strong> 3.87 / 4.00</li>
-                            <li><strong>Scholarship:</strong> Recipient of SUN UP Scholarship</li>
-                            <li><strong>Coursework:</strong> Fluid Mechanics, Thermodynamics, Turbomachinery,
-                                Probability & Statistics, K3, Maintenance Management, etc.</li>
+                            <li><strong>Scholarship:</strong> SUN UP Scholarship Recipient</li>
+                            <li><strong>Relevant coursework:</strong> Fluid Mechanics, Thermodynamics, Turbomachinery,
+                                Probability & Statistics, K3/HSE, Maintenance Management, Mechanics of Materials,
+                                Mechatronics, Manufacturing Processes, and Engineering Design.</li>
                         </ul>
                     </div>
                     <div class="edu-item">
                         <div class="edu-header">
                             <h4>MAN 1 Yogyakarta</h4>
-                            <span class="year">2019 – 2022</span>
+                            <span class="year">2019 &ndash; 2022</span>
                         </div>
                         <p class="role">Boarding School Science Program</p>
-                        <p><strong>Award:</strong> high-achieving students of 2022</p>
+                        <p><strong>Award:</strong> Outstanding Student Distinction, 2022</p>
                     </div>
                 </div>
             </div>
@@ -122,22 +158,26 @@
 
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-header">
+                <span class="eyebrow">Track Record</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p>Applied engineering judgment through maintenance, teaching, and laboratory environments.</p>
+            </div>
             <div class="timeline">
-
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3>PT Pertamina Drilling Services Indonesia (PDSI)</h3>
-                            <span class="date">Aug 2025 – Sep 2025</span>
+                            <span class="date">Aug 2025 &ndash; Sep 2025</span>
                         </div>
                         <h4 class="role-title">Mechanical Engineering Intern, Workshop & Maintenance Division</h4>
                         <ul class="job-desc">
-                            <li>Conducted Risk Assessment on the Blowout Preventer (BOP) system.</li>
+                            <li>Conducted risk assessment on Blowout Preventer (BOP) systems.</li>
                             <li>Calculated Risk Priority Number (RPN) using Failure Mode and Effects Analysis (FMEA).
                             </li>
-                            <li>Analyzed maintenance data and gained hands-on exposure to workshop operations.</li>
+                            <li>Analyzed maintenance data and gained exposure to drilling equipment workshop
+                                operations.</li>
                         </ul>
                     </div>
                 </div>
@@ -147,26 +187,26 @@
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3>Universitas Pertamina</h3>
-                            <span class="date">2023 – Present</span>
+                            <span class="date">2023 &ndash; Present</span>
                         </div>
                         <h4 class="role-title">Laboratory Teaching Assistant</h4>
 
                         <div class="sub-role">
                             <strong>Fluid Mechanics Lab (2025):</strong>
-                            <p>Instructed students on fluid flow characteristics, head loss in piping systems, and pump
-                                performance testing. Ensured safety protocols during hydraulic experiments.</p>
+                            <p>Instructed students on fluid flow characteristics, head loss in piping systems, pump
+                                performance testing, and safety protocols during hydraulic experiments.</p>
                         </div>
 
                         <div class="sub-role">
-                            <strong>Mechanics of Materials Lab (2023–2024):</strong>
-                            <p>Guided destructive testing procedures (Tensile, Torsion, and Impact Tests) using
-                                Universal Testing Machines (UTM) to analyze material properties.</p>
+                            <strong>Mechanics of Materials Lab (2023&ndash;2024):</strong>
+                            <p>Guided tensile, torsion, and impact testing using Universal Testing Machines to analyze
+                                material properties and destructive testing procedures.</p>
                         </div>
 
                         <div class="sub-role">
-                            <strong>Basic Physics Lab (2023–Present):</strong>
-                            <p>Mentored 30+ students per semester in fundamental physics experiments, grading weekly
-                                technical reports with a focus on data accuracy.</p>
+                            <strong>Basic Physics Lab (2023&ndash;Present):</strong>
+                            <p>Mentored 30+ students per semester in physics experiments and evaluated weekly technical
+                                reports with a focus on data accuracy.</p>
                         </div>
                     </div>
                 </div>
@@ -176,139 +216,279 @@
                     <div class="timeline-content glass-card">
                         <div class="timeline-header">
                             <h3>Calculus Teaching Assistant</h3>
-                            <span class="date">2023 – 2024</span>
+                            <span class="date">2023 &ndash; 2024</span>
                         </div>
                         <ul class="job-desc">
                             <li>Assisted lecturers in preparing teaching materials and practice questions.</li>
-                            <li>Provided academic guidance to students in mastering calculus concepts and evaluated
-                                assignments.</li>
+                            <li>Provided academic guidance in calculus concepts and evaluated student assignments.</li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Projects & Research</h2>
-            <div class="projects-grid">
+            <div class="section-header">
+                <span class="eyebrow">Selected Work</span>
+                <h2 class="section-title">Projects & Research</h2>
+                <p>Ranked around the strongest evidence for process safety, QRA, reliability, and data-driven
+                    engineering capabilities.</p>
+            </div>
 
-                <div class="project-card glass-card" data-project="heart-vs-slim">
-                    <div class="project-header">
-                        <i class="fas fa-microscope project-icon"></i>
-                        <h3>Comparative Analysis of HEART vs SLIM</h3>
-                    </div>
-                    <p class="role">Project Leader | Published in Motivtech Journal</p>
-                    <p>Conducted a comparative study of two major Human Reliability Assessment (HRA) methods (HEART and
-                        SLIM) to analyze safety risks in MCAS operations.</p>
-                    <div class="tags">
-                        <span>HRA</span>
-                        <span>Safety Risks</span>
-                        <span>Data-Driven</span>
-                    </div>
+            <div class="project-group">
+                <div class="project-group-header">
+                    <span>Main Projects</span>
+                    <p>Flagship work aligned with Process Safety, HSE/HSSE, Risk Engineering, Reliability, and
+                        Engineering Data Analytics.</p>
                 </div>
 
-                <div class="project-card glass-card" data-project="hero-helmets">
-                    <div class="project-header">
-                        <i class="fas fa-hard-hat project-icon"></i>
-                        <h3>HERO Helmets: Bio-Composite Safety Helmet</h3>
+                <div class="projects-grid">
+                    <div class="project-card glass-card featured-project" data-project="n-hexane-hazard-zone">
+                        <div class="project-media">
+                            <img src="assets/images/projects/n-hexane-hazard-zone/dashboard/pasted-1777173393954-0.png"
+                                alt="n-Hexane hazard zone dashboard preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-fire project-icon"></i>
+                            <h3>n-Hexane Hazard Zone Prediction</h3>
+                        </div>
+                        <p class="role">Undergraduate Thesis | Process Safety, QRA & ML Surrogate Modeling</p>
+                        <p>Developed rapid hazard-zone prediction workflows for n-Hexane tank overfill scenarios using
+                            ALOHA ground truth, ML surrogate models, and a dashboard for decision support.</p>
+                        <div class="tags">
+                            <span>ALOHA</span>
+                            <span>LEL Hazard Zones</span>
+                            <span>ANN</span>
+                            <span>Dashboard</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <p class="role">Team Leader | Funded by Kemdikbudristek (PKM-KC)</p>
-                    <p>Developed an industrial safety helmet using water hyacinth fiber biocomposites. Conducted
-                        mechanical testing (Impact/Tensile) to ensure SNI/ASTM compliance.</p>
-                    <div class="tags">
-                        <span>Biocomposites</span>
-                        <span>Mechanical Testing</span>
-                        <span>Innovation</span>
-                    </div>
-                </div>
 
-                <div class="project-card glass-card" data-project="perovskite-halide">
-                    <div class="project-header">
-                        <i class="fas fa-lightbulb project-icon"></i>
-                        <h3>Perovskite Halide as Fluorescent Taggant</h3>
+                    <div class="project-card glass-card" data-project="energy-transition-indonesia">
+                        <div class="project-media">
+                            <img src="assets/images/projects/energy-transition-indonesia/Picture2.png"
+                                alt="Energy transition forecast preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <h3>Evidence-Based Energy Transition Analysis</h3>
+                        </div>
+                        <p class="role">First Author | Manuscript under pre-review</p>
+                        <p>Analyzed Indonesia's energy transition using ARIMA forecasting, multiple regression, Monte
+                            Carlo simulation, and sensitivity analysis to quantify policy target feasibility.</p>
+                        <div class="tags">
+                            <span>ARIMA</span>
+                            <span>Monte Carlo</span>
+                            <span>Regression</span>
+                            <span>Energy Policy</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <p class="role">Researcher</p>
-                    <p>Authored a study on utilizing Perovskite Halide materials as fluorescent taggants for Line Tracer
-                        applications in Oil & Gas to detect leaks.</p>
-                    <div class="tags">
-                        <span>Fluid Mechanics</span>
-                        <span>Leak Detection</span>
-                        <span>Research</span>
-                    </div>
-                </div>
 
-                <div class="project-card glass-card" data-project="autonomous-trash-bin">
-                    <div class="project-header">
-                        <i class="fas fa-robot project-icon"></i>
-                        <h3>Autonomous Trash Bin</h3>
+                    <div class="project-card glass-card" data-project="heart-vs-slim">
+                        <div class="project-media">
+                            <img src="assets/images/projects/heart-vs-slim/1.jpg" alt="HEART vs SLIM project preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-user-shield project-icon"></i>
+                            <h3>HEART vs SLIM Human Reliability Assessment</h3>
+                        </div>
+                        <p class="role">Project Leader | Published in Motivtech Journal</p>
+                        <p>Compared two Human Reliability Assessment methods to evaluate human error probability and
+                            safety risk in an engineering operation context.</p>
+                        <div class="tags">
+                            <span>HRA</span>
+                            <span>HEART</span>
+                            <span>SLIM</span>
+                            <span>Safety Risk</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <p class="role">Capstone Project Leader</p>
-                    <p>Led end-to-end development of a mechatronic waste management robot. Engineered automated
-                        navigation using IR sensors and touchless actuation.</p>
-                    <div class="tags">
-                        <span>Mechatronics</span>
-                        <span>Automation</span>
-                        <span>Arduino</span>
-                    </div>
-                </div>
 
-                <div class="project-card glass-card" data-project="electric-oven">
-                    <div class="project-header">
-                        <i class="fas fa-temperature-high project-icon"></i>
-                        <h3>Low-Cost Electric Oven Prototype</h3>
+                    <div class="project-card glass-card" data-project="excel-engineering-templates">
+                        <div class="project-media">
+                            <img src="assets/images/projects/excel-engineering-templates/contoh tampilan excel projek 5, penentuan zona explosio.png"
+                                alt="Excel engineering calculation template preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-table project-icon"></i>
+                            <h3>Excel Engineering Calculation Templates</h3>
+                        </div>
+                        <p class="role">Engineering Tooling | Risk & Consequence Calculations</p>
+                        <p>Built reusable Excel tools for engineering calculations including explosion blast, pool fire,
+                            source emission power, and risk-related calculation workflows.</p>
+                        <div class="tags">
+                            <span>Excel</span>
+                            <span>TNT Blast</span>
+                            <span>Pool Fire</span>
+                            <span>Risk Calculation</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <p class="role">Heat Transfer Course Project</p>
-                    <p>Designed a functional prototype utilizing upcycled heating elements and engineered a composite
-                        insulation system to minimize heat loss.</p>
-                    <div class="tags">
-                        <span>Heat Transfer</span>
-                        <span>Prototyping</span>
-                    </div>
-                </div>
 
-                <div class="project-card glass-card" data-project="hvac-design">
-                    <div class="project-header">
-                        <i class="fas fa-fan project-icon"></i>
-                        <h3>HVAC System Design & LCA</h3>
+                    <div class="project-card glass-card" data-project="cnc-failure-identification">
+                        <div class="project-media">
+                            <img src="assets/images/projects/cnc-failure-identification/04_train_vs_test_overfitting.png"
+                                alt="CNC failure identification ML performance preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-microchip project-icon"></i>
+                            <h3>CNC Failure Identification Using Machine Learning</h3>
+                        </div>
+                        <p class="role">AI Engineering Project | Predictive Maintenance</p>
+                        <p>Compared classification models for CNC machine condition identification using preprocessing,
+                            model evaluation, F1-score analysis, and overfitting diagnostics.</p>
+                        <div class="tags">
+                            <span>Predictive Maintenance</span>
+                            <span>XGBoost</span>
+                            <span>ANN</span>
+                            <span>F1-score</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <p class="role">Project Leader</p>
-                    <p>Calculated cooling loads (1,020.8 kW), compared Chiller vs RTU systems, and conducted Life Cycle
-                        Assessment (LCA) for carbon footprint reduction.</p>
-                    <div class="tags">
-                        <span>HVAC</span>
-                        <span>LCA</span>
-                        <span>Sustainability</span>
+
+                    <div class="project-card glass-card" data-project="perovskite-halide">
+                        <div class="project-media">
+                            <img src="assets/images/projects/perovskite-halide/pasted-1777173233642-0.png"
+                                alt="Perovskite fluorescent taggant market analysis preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-flask project-icon"></i>
+                            <h3>Perovskite Halide Fluorescent Taggant</h3>
+                        </div>
+                        <p class="role">Researcher | Feasibility Study & HKI-registered work</p>
+                        <p>Evaluated Perovskite Halide as a fluorescent taggant for line tracer applications in oil &
+                            gas leak detection, pipeline monitoring, and environmental diagnostics.</p>
+                        <div class="tags">
+                            <span>Oil & Gas</span>
+                            <span>Leak Detection</span>
+                            <span>Feasibility Study</span>
+                            <span>HKI</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <div class="project-group additional-projects">
+                <div class="project-group-header">
+                    <span>Additional Engineering Projects</span>
+                    <p>Earlier mechanical design, product innovation, thermal-fluid, and mechatronics work that supports
+                        the broader engineering profile.</p>
+                </div>
+
+                <div class="projects-grid compact-projects">
+                    <div class="project-card glass-card" data-project="hero-helmets">
+                        <div class="project-media">
+                            <img src="assets/images/projects/hero-helmets/1.png" alt="HERO Helmets project preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-hard-hat project-icon"></i>
+                            <h3>HERO Helmets: Bio-Composite Safety Helmet</h3>
+                        </div>
+                        <p class="role">Team Leader | Funded by Kemdikbudristek (PKM-KC)</p>
+                        <p>Developed a water hyacinth fiber biocomposite safety helmet prototype supported by material
+                            testing and sustainability-oriented product innovation.</p>
+                        <div class="tags">
+                            <span>Biocomposites</span>
+                            <span>Safety Equipment</span>
+                            <span>PKM-KC</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
+                    </div>
+
+                    <div class="project-card glass-card" data-project="hvac-design">
+                        <div class="project-media">
+                            <img src="assets/images/projects/hvac-design/1.png" alt="HVAC and LCA project preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-fan project-icon"></i>
+                            <h3>HVAC System Design & LCA</h3>
+                        </div>
+                        <p class="role">Project Leader</p>
+                        <p>Calculated cooling loads, compared Chiller vs RTU systems, and conducted Life Cycle
+                            Assessment for carbon footprint reduction.</p>
+                        <div class="tags">
+                            <span>HVAC</span>
+                            <span>LCA</span>
+                            <span>Sustainability</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
+                    </div>
+
+                    <div class="project-card glass-card" data-project="autonomous-trash-bin">
+                        <div class="project-media">
+                            <img src="assets/images/projects/autonomous-trash-bin/1.jpg"
+                                alt="Autonomous trash bin project preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-robot project-icon"></i>
+                            <h3>Autonomous Trash Bin</h3>
+                        </div>
+                        <p class="role">Capstone Project Leader</p>
+                        <p>Led development of a line-follower waste management robot with IR navigation, ultrasonic
+                            sensing, servo actuation, and performance testing.</p>
+                        <div class="tags">
+                            <span>Mechatronics</span>
+                            <span>Automation</span>
+                            <span>Arduino</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
+                    </div>
+
+                    <div class="project-card glass-card" data-project="electric-oven">
+                        <div class="project-media">
+                            <img src="assets/images/projects/electric-oven/WhatsApp Image 2026-02-12 at 22.19.14.jpeg"
+                                alt="Low-cost electric oven project preview">
+                        </div>
+                        <div class="project-header">
+                            <i class="fas fa-temperature-high project-icon"></i>
+                            <h3>Low-Cost Electric Oven Prototype</h3>
+                        </div>
+                        <p class="role">Heat Transfer Course Project</p>
+                        <p>Designed a low-cost oven prototype using upcycled heating elements and composite insulation
+                            to evaluate heating rate and thermal retention.</p>
+                        <div class="tags">
+                            <span>Heat Transfer</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <span class="project-link">View case study <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="organizational" class="section">
         <div class="container">
-            <h2 class="section-title">Organizational Experience</h2>
+            <div class="section-header">
+                <span class="eyebrow">Leadership</span>
+                <h2 class="section-title">Organizational Experience</h2>
+                <p>Cross-functional work in student development, visual communication, and sustainability programs.</p>
+            </div>
             <div class="org-grid">
                 <div class="org-card glass-card">
+                    <i class="fas fa-users org-icon"></i>
                     <h3>Mechanical Engineering Student Association</h3>
-                    <p class="role">Head of Student Department (2024 – 2025)</p>
-                    <p>Supervised programs in mentoring, public outreach, and entrepreneurship. Coordinated with
-                        stakeholders ensuring smooth program implementation.</p>
+                    <p class="role">Head of Student Department (2024 &ndash; 2025)</p>
+                    <p>Supervised mentoring, public outreach, and entrepreneurship programs while coordinating with
+                        stakeholders and event committees.</p>
                 </div>
                 <div class="org-card glass-card">
+                    <i class="fas fa-pen-nib org-icon"></i>
                     <h3>MIRAI UP Graphic Design Division</h3>
-                    <p class="role">Graphic Designer (2023 – 2024)</p>
-                    <p>Designed visual materials and social media content for various events (MIF, PERISMA).</p>
+                    <p class="role">Graphic Designer (2023 &ndash; 2024)</p>
+                    <p>Designed social media, publication, and event visuals for MIRAI UP activities including MIF,
+                        PERISMA, and recurring division requests.</p>
                 </div>
                 <div class="org-card glass-card" data-project="sekitar-kita">
+                    <i class="fas fa-leaf org-icon"></i>
                     <h3>Sekitar Kita by SRE Indonesia</h3>
                     <p class="role">Graphic Design Volunteer (6 Months)</p>
-                    <p>Designed visual content for Instagram/posters and participated in renewable energy initiatives
-                        (PLTS visits, waste management).</p>
+                    <p>Created sustainability communication assets while participating in renewable energy conferences,
+                        PLTS visits, and waste management education.</p>
                 </div>
             </div>
         </div>
@@ -316,36 +496,66 @@
 
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Achievements</h2>
+            <div class="section-header">
+                <span class="eyebrow">Capabilities</span>
+                <h2 class="section-title">Skills & Achievements</h2>
+                <p>A practical toolkit for safety analysis, reliability, data science, engineering software, and
+                    technical communication.</p>
+            </div>
             <div class="skills-achievements-container">
                 <div class="skills-column">
-                    <h3>Technical & Soft Skills</h3>
+                    <h3>Core Skill Clusters</h3>
                     <div class="skill-group">
-                        <h4>Software</h4>
+                        <h4>Process Safety & Risk Engineering</h4>
                         <div class="skill-tags">
-                            <span>ANSYS Fluent</span>
-                            <span>Carrier HAP</span>
-                            <span>Python (AI & Data)</span>
-                            <span>Google Colab</span>
-                            <span>SolidWorks</span>
-                            <span>AutoCAD</span>
-                            <span>Adobe Photoshop</span>
-                            <span>Adobe Illustrator</span>
+                            <span>QRA</span>
+                            <span>Consequence Modeling</span>
+                            <span>Hazard Zone Analysis</span>
+                            <span>ALOHA</span>
+                            <span>LEL-Based Zoning</span>
+                            <span>Emergency Response Insight</span>
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h4>Soft Skills</h4>
+                        <h4>Reliability & Maintenance</h4>
                         <div class="skill-tags">
-                            <span>Leadership</span>
-                            <span>Problem Solving</span>
-                            <span>Teamwork</span>
-                            <span>Public Speaking</span>
-                            <span>Time Management</span>
-                            <span>Scientific Writing</span>
-                            <span>Analytical Thinking</span>
+                            <span>FMEA</span>
+                            <span>RPN</span>
+                            <span>HEART</span>
+                            <span>SLIM</span>
+                            <span>BOP Risk Assessment</span>
+                            <span>Failure Analysis</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Data Analytics & Machine Learning</h4>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>TensorFlow/Keras</span>
+                            <span>ANN</span>
+                            <span>Regression</span>
+                            <span>Monte Carlo</span>
+                            <span>SHAP</span>
+                            <span>Power BI</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Engineering Software & Communication</h4>
+                        <div class="skill-tags">
+                            <span>SolidWorks</span>
+                            <span>AutoCAD</span>
+                            <span>Carrier HAP</span>
+                            <span>Excel Engineering Templates</span>
+                            <span>Adobe Illustrator</span>
+                            <span>Adobe Photoshop</span>
+                            <span>Technical Writing</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="achievements-column glass-card">
                     <h3>Achievements</h3>
                     <ul class="achievement-list">
@@ -373,7 +583,14 @@
                         <li>
                             <i class="fas fa-award"></i>
                             <div>
-                                <strong>Delegation ON-MIPA Physics</strong>
+                                <strong>SUN UP Scholarship Recipient</strong>
+                                <span class="ach-desc">Universitas Pertamina scholarship award</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>ON-MIPA Physics Delegation</strong>
                                 <span class="ach-desc">Universitas Pertamina (2023)</span>
                             </div>
                         </li>
@@ -383,24 +600,86 @@
         </div>
     </section>
 
+    <section id="credentials" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Credentials</span>
+                <h2 class="section-title">Certifications & Recognition</h2>
+                <p>Credentials that support the portfolio's focus on AI engineering, data analytics, Excel-based
+                    engineering workflows, and research recognition.</p>
+            </div>
+            <div class="credentials-grid">
+                <article class="credential-card glass-card">
+                    <div class="credential-media">
+                        <img src="assets/images/credentials/Certificate of Excellence Brainacademy.png"
+                            alt="AI Engineering Bootcamp certificate preview">
+                    </div>
+                    <div class="credential-content">
+                        <span>AI Engineering</span>
+                        <h3>Certificate of Excellence</h3>
+                        <p>Ruangguru Engineering Academy+ AI Engineering Bootcamp, awarded with grade A.</p>
+                    </div>
+                </article>
+
+                <article class="credential-card glass-card">
+                    <div class="credential-media">
+                        <img src="assets/images/credentials/certificate-Dqlab data analyst.jpg"
+                            alt="DQLab Data Analyst certificate preview">
+                    </div>
+                    <div class="credential-content">
+                        <span>Data Analytics</span>
+                        <h3>Bootcamp Data Analyst</h3>
+                        <p>DQLab Data Analyst with SQL & Python in Google Platform.</p>
+                    </div>
+                </article>
+
+                <article class="credential-card glass-card">
+                    <div class="credential-media">
+                        <img src="assets/images/credentials/certificate-DQLAB modul excel.jpg"
+                            alt="DQLab Excel certificate preview">
+                    </div>
+                    <div class="credential-content">
+                        <span>Spreadsheet Analytics</span>
+                        <h3>DQLab Excel Module</h3>
+                        <p>Credential supporting Excel-based analysis and reusable calculation workflows.</p>
+                    </div>
+                </article>
+
+                <article class="credential-card glass-card">
+                    <div class="credential-media">
+                        <img src="assets/images/credentials/hakcipta untuk projekl 1.png"
+                            alt="HKI Perovskite research certificate preview">
+                    </div>
+                    <div class="credential-content">
+                        <span>Research Recognition</span>
+                        <h3>HKI Registration</h3>
+                        <p>Copyright record for Perovskite Halide fluorescent taggant feasibility study work.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-content">
-                <h2>Let's Connect</h2>
-                <p>Feel free to reach out for collaborations or opportunities.</p>
+                <span class="eyebrow">Contact</span>
+                <h2>Let's Build Safer Engineering Decisions</h2>
+                <p>Open for internship opportunities, engineering collaborations, safety/risk research discussions, and
+                    data-driven engineering projects.</p>
                 <div class="contact-info">
                     <a href="mailto:zakiramdhan2003@gmail.com" class="contact-link"><i class="fas fa-envelope"></i>
                         zakiramdhan2003@gmail.com</a>
-                    <a href="https://wa.me/qr/E2YB3YHXCZC3G1" class="contact-link" target="_blank"><i
-                            class="fab fa-whatsapp"></i> +62
-                        819-9273-0349</a>
-                    <span class="contact-link"><i class="fas fa-map-marker-alt"></i> Bekasi, West Java, Indonesia</span>
+                    <a href="https://wa.me/qr/E2YB3YHXCZC3G1" class="contact-link" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> +62 819-9273-0349</a>
+                    <span class="contact-link"><i class="fas fa-map-marker-alt"></i> Bekasi, West Java,
+                        Indonesia</span>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/m-zaki-ramdhan-bb5885393" class="social-icon"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Melionidas31" class="social-icon" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/m-zaki-ramdhan-bb5885393" class="social-icon" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Melionidas31" class="social-icon" target="_blank"
+                        rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="copyright">
                     <p>&copy; 2026 M. Zaki Ramdhan. All Rights Reserved.</p>
@@ -409,23 +688,25 @@
         </div>
     </footer>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-content glass-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="close-modal" type="button" aria-label="Close project details">&times;</button>
             <div class="modal-header-center">
                 <h2 id="modal-title">Project Title</h2>
                 <p id="modal-role" class="role">Project Role</p>
             </div>
             <div class="modal-body">
                 <div class="carousel-container">
-                    <button id="prev-btn" class="carousel-btn prev">&lt;</button>
+                    <button id="prev-btn" class="carousel-btn prev" type="button" aria-label="Previous project media">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
                     <div class="carousel-slide">
                         <img id="modal-image" src="" alt="Project Image">
-                        <video id="modal-video" controls autoplay muted loop
-                            style="display: none; width: 100%; height: 100%; object-fit: contain;"></video>
+                        <video id="modal-video" controls autoplay muted loop></video>
                     </div>
-                    <button id="next-btn" class="carousel-btn next">&gt;</button>
+                    <button id="next-btn" class="carousel-btn next" type="button" aria-label="Next project media">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
                 <div class="carousel-indicators" id="carousel-indicators"></div>
 
@@ -436,7 +717,7 @@
         </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js?v=motion-fix-20260516-2"></script>
 </body>
 
 </html>
