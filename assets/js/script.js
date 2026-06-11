@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: `
                 <p><strong>Focus:</strong> rapid hazard-zone prediction for n-Hexane tank overfill scenarios using ALOHA simulation outputs as ground truth.</p>
                 <ul>
-                    <li>Built a dataset of 1,261 full-factorial scenarios covering atmospheric stability, wind speed, temperature, release rate, effective spill duration, and liquid thickness.</li>
-                    <li>Modeled red, orange, and yellow LEL-based hazard-zone radii with MLR, Random Forest, and ANN — the ANN surrogate reaches R² 0.997 with MAE ≈ 3.5 m across the three zones.</li>
+                    <li>Generated 1,215 full-factorial scenarios across six parameters (Pasquill stability class, wind speed, temperature, spill rate, effective duration, liquid thickness), extended to 1,261 with targeted out-of-distribution additions.</li>
+                    <li>Modeled red, orange, and yellow LEL-based hazard-zone radii with MLR, Random Forest, and ANN — the ANN surrogate reaches R² 0.9975 with a red-zone MAE of 1.82 m, 12× lower than the MLR baseline.</li>
                     <li>Stress-tested out-of-distribution robustness (wind and temperature beyond the training range) and retrained across two revision rounds to close the gaps.</li>
                     <li>Shipped as a Flask web app with an interactive ALOHA-style plume map (Leaflet), batch CSV/Excel processing, and KML export — plus a separate BI dashboard for scenario analytics.</li>
                 </ul>
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'energy-transition-indonesia': {
             title: 'Evidence-Based Energy Transition Analysis for Indonesia',
-            role: 'First author — manuscript under pre-review',
+            role: 'First author — accepted, SUSTINERE: Journal of Environment and Sustainability (Scopus-indexed · SINTA 2)',
             description: `
                 <p><strong>Focus:</strong> statistical feasibility analysis for Indonesia's energy transition and sustainability policy decisions.</p>
                 <ul>

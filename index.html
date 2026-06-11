@@ -11,9 +11,20 @@
     <meta name="theme-color" content="#0b0f14">
 
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://melionidas31.github.io/MZakiRamdhanPort.github.io/">
     <meta property="og:title" content="M. Zaki Ramdhan — Process Safety, QRA & Data-Driven Engineering">
     <meta property="og:description"
-        content="Quantifying risk to engineer safer energy systems. Process safety, QRA, reliability, and machine learning portfolio.">
+        content="Quantifying risk to engineer safer energy systems. Process safety, QRA, reliability, and AI engineering portfolio.">
+    <meta property="og:image"
+        content="https://melionidas31.github.io/MZakiRamdhanPort.github.io/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="M. Zaki Ramdhan — Process Safety, QRA & Data-Driven Engineering">
+    <meta name="twitter:description"
+        content="Quantifying risk to engineer safer energy systems. Process safety, QRA, reliability, and AI engineering portfolio.">
+    <meta name="twitter:image"
+        content="https://melionidas31.github.io/MZakiRamdhanPort.github.io/assets/images/og-image.png">
 
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
@@ -97,6 +108,8 @@
                         <div class="hero-actions" data-reveal>
                             <a href="#work" class="btn btn-solid">View selected work <span class="arr"
                                     aria-hidden="true">&rarr;</span></a>
+                            <a href="assets/docs/CV_M_Zaki_Ramdhan.pdf" class="btn btn-line" download>Download CV
+                                <span class="arr" aria-hidden="true">&darr;</span></a>
                             <a href="#contact" class="btn btn-line">Get in touch</a>
                         </div>
                         <p class="hero-status mono" data-reveal>Open to internships &amp; research collaborations
@@ -134,8 +147,8 @@
                             <dd>10,000</dd>
                         </div>
                         <div class="spec">
-                            <dt class="mono">Journal publication</dt>
-                            <dd>DOI<span class="spec-sub">&nbsp;registered</span></dd>
+                            <dt class="mono">Journal publications</dt>
+                            <dd>2<span class="spec-sub">&nbsp;1 published &middot; 1 accepted</span></dd>
                         </div>
                     </dl>
                 </div>
@@ -156,16 +169,17 @@
                     <div class="about-main" data-reveal>
                         <h3 class="block-label mono">Summary</h3>
                         <p class="about-lead">I am a Mechanical Engineering undergraduate at Universitas Pertamina
-                            focused on process safety, quantitative risk assessment, and reliability engineering —
-                            with a BNSP-certified data analysis toolkit to back it up.</p>
-                        <p>My thesis develops machine-learning surrogate models that predict n-Hexane tank-overfill
-                            hazard zones from ALOHA simulation outputs, deployed as a live decision-support web app.
-                            Around it sit BOP FMEA/RPN risk assessment at Pertamina Drilling, published Human
-                            Reliability Assessment research, statistical modeling of Indonesia&rsquo;s energy
-                            transition, and AI-powered tools I have built and shipped — from a root-cause-analysis
-                            platform for HSSE teams to an AI bot that automates field inspection reporting.</p>
+                            specializing in process safety and reliability engineering for oil &amp; gas systems —
+                            with demonstrated capability to build and deploy production-grade AI and data tools.</p>
+                        <p>My thesis develops ML surrogate models that predict n-Hexane tank-overfill hazard zones in
+                            real time (ANN R&sup2; 0.9975 against ALOHA ground truth), deployed as a live
+                            decision-support web app. Around it sit hands-on FMEA and BOP risk assessment from my
+                            internship at Pertamina Drilling, published Human Reliability Assessment research, a second
+                            manuscript on energy-transition feasibility accepted in SUSTINERE, and AI tools I have
+                            built and shipped — from an HSSE document-analysis platform to an AI bot that automates
+                            field inspection reporting.</p>
                         <p>The common thread: take a real safety or reliability question, quantify it honestly, and
-                            ship something engineers can actually use.</p>
+                            ship something engineers can actually use. BNSP-certified Data Analyst.</p>
                     </div>
 
                     <div class="about-side" data-reveal>
@@ -229,21 +243,22 @@
                             </div>
                             <div>
                                 <dt class="mono">Approach</dt>
-                                <dd>Generated a 1,261-scenario full-factorial dataset (stability class, wind,
-                                    temperature, release rate, spill duration, liquid thickness), trained MLR, Random
-                                    Forest, and ANN surrogates to predict red/orange/yellow LEL zone radii, and
-                                    stress-tested out-of-distribution robustness across two retraining rounds.</dd>
+                                <dd>Generated 1,215 full-factorial scenarios across six parameters (Pasquill stability
+                                    class, wind, temperature, spill rate, duration, liquid thickness), extended to
+                                    1,261 with targeted out-of-distribution additions, then trained MLR, Random
+                                    Forest, and ANN surrogates to predict red/orange/yellow LEL zone radii.</dd>
                             </div>
                             <div>
                                 <dt class="mono">Outcome</dt>
-                                <dd>The ANN surrogate reaches R&sup2; 0.997 (MAE &asymp; 3.5 m across three zones),
-                                    deployed as a Flask web app with an ALOHA-style plume map, batch processing, and
-                                    KML export &mdash; plus a BI dashboard for scenario analytics.</dd>
+                                <dd>The ANN surrogate reaches R&sup2; 0.9975 with a red-zone MAE of 1.82 m &mdash;
+                                    12&times; lower than the MLR baseline &mdash; deployed as a Flask web app with an
+                                    ALOHA-style plume map, batch processing, and KML export, plus a BI dashboard for
+                                    scenario analytics.</dd>
                             </div>
                         </dl>
                         <ul class="case-facts" role="list">
                             <li class="mono">1,261 scenarios</li>
-                            <li class="mono">ANN R&sup2; 0.997</li>
+                            <li class="mono">ANN R&sup2; 0.9975</li>
                             <li class="mono">3 LEL zones</li>
                             <li class="mono">Live web app</li>
                         </ul>
@@ -269,8 +284,8 @@
                         </button>
                     </div>
                     <div class="case-body">
-                        <p class="case-kicker mono">Case study 02 &mdash; First author &middot; manuscript under
-                            pre-review</p>
+                        <p class="case-kicker mono">Case study 02 &mdash; First author &middot; accepted, SUSTINERE
+                            (Scopus-indexed &middot; SINTA 2)</p>
                         <h3>Stress-testing Indonesia&rsquo;s energy transition targets</h3>
                         <p class="case-summary">Policy targets are usually debated in words. This study puts numbers on
                             them: probabilistic feasibility of Indonesia&rsquo;s renewable energy goals under
@@ -290,8 +305,9 @@
                             <div>
                                 <dt class="mono">Outcome</dt>
                                 <dd>The 2025 renewable target shows a 65.21% probability of achievement; the 2060 APS
-                                    78% target shows 0.00% under current trends &mdash; clear evidence for course
-                                    correction.</dd>
+                                    78% target shows 0.00% under current trends. Accepted for publication in
+                                    SUSTINERE: Journal of Environment and Sustainability (Scopus-indexed, SINTA 2).
+                                </dd>
                             </div>
                         </dl>
                         <ul class="case-facts" role="list">
@@ -485,8 +501,8 @@
                                 <li>Conducted risk assessment on Blowout Preventer (BOP) systems.</li>
                                 <li>Calculated Risk Priority Numbers using Failure Mode and Effects Analysis
                                     (FMEA/RPN).</li>
-                                <li>Analyzed maintenance data with direct exposure to drilling equipment workshop
-                                    operations.</li>
+                                <li>Analyzed maintenance records and performed Non-Destructive Testing with hands-on
+                                    exposure to drilling equipment workshop operations.</li>
                             </ul>
                         </div>
                     </li>
@@ -597,7 +613,8 @@
                                 <li>Regression</li>
                                 <li>Monte Carlo</li>
                                 <li>SHAP</li>
-                                <li>Power BI</li>
+                                <li>Plotly</li>
+                                <li>Looker Studio</li>
                                 <li>Streamlit</li>
                             </ul>
                             <p class="applied mono">Applied in: thesis dashboard &middot; CNC failure ID &middot;
@@ -608,6 +625,7 @@
                             <ul class="chiplist" role="list">
                                 <li>SolidWorks</li>
                                 <li>AutoCAD</li>
+                                <li>ANSYS</li>
                                 <li>Carrier HAP</li>
                                 <li>Excel engineering templates</li>
                                 <li>Adobe Illustrator</li>
@@ -745,7 +763,8 @@
                         <div class="cred-body">
                             <p class="cred-tag mono">Research recognition</p>
                             <h3>HKI Registration</h3>
-                            <p>Copyright record for the Perovskite halide fluorescent taggant feasibility study.</p>
+                            <p>Surat Pencatatan Ciptaan No. 001135780 (Kemenkumham RI) for the Perovskite halide
+                                fluorescent taggant feasibility study.</p>
                         </div>
                     </article>
                 </div>
@@ -773,6 +792,8 @@
                                 aria-hidden="true">&#8599;</span></a>
                     </div>
                     <ul class="contact-links" role="list">
+                        <li><a href="assets/docs/CV_M_Zaki_Ramdhan.pdf" class="mono" download>Download CV <span
+                                    class="arr" aria-hidden="true">&darr;</span></a></li>
                         <li><a href="https://www.linkedin.com/in/m-zaki-ramdhan-bb5885393" target="_blank"
                                 rel="noopener noreferrer" class="mono">LinkedIn <span class="arr"
                                     aria-hidden="true">&#8599;</span></a></li>
@@ -820,7 +841,7 @@
         </div>
     </div>
 
-    <script src="assets/js/script.js?v=dossier-2"></script>
+    <script src="assets/js/script.js?v=dossier-3"></script>
 </body>
 
 </html>
