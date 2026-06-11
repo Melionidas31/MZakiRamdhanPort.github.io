@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://melionidas31.github.io/MZakiRamdhanPort.github.io/sitemap.xml
+Sitemap: https://melionidas31.github.io/MZakiRamdhan/sitemap.xml
