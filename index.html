@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M. Zaki Ramdhan — Process Safety, QRA & Data-Driven Engineering</title>
     <meta name="description"
-        content="Portfolio of M. Zaki Ramdhan, a Mechanical Engineering undergraduate at Universitas Pertamina focused on process safety, quantitative risk assessment, reliability engineering, and machine learning for safer energy systems.">
+        content="Portfolio of M. Zaki Ramdhan, a Mechanical Engineering undergraduate at Universitas Pertamina focused on process safety, quantitative risk assessment, reliability engineering, and AI-powered engineering tools for safer energy systems.">
     <meta name="author" content="M. Zaki Ramdhan">
     <meta name="theme-color" content="#0b0f14">
 
@@ -22,7 +22,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css?v=dossier-1">
+    <link rel="stylesheet" href="assets/css/styles.css?v=dossier-2">
 
     <script>document.documentElement.classList.add('js');</script>
 
@@ -43,7 +43,7 @@
             "addressRegion": "West Java",
             "addressCountry": "ID"
         },
-        "knowsAbout": ["Process Safety", "Quantitative Risk Assessment", "Reliability Engineering", "Machine Learning", "Mechanical Engineering"],
+        "knowsAbout": ["Process Safety", "Quantitative Risk Assessment", "Reliability Engineering", "Machine Learning", "Data Analysis", "AI Engineering", "Mechanical Engineering"],
         "sameAs": [
             "https://www.linkedin.com/in/m-zaki-ramdhan-bb5885393",
             "https://github.com/Melionidas31"
@@ -92,8 +92,8 @@
                         </p>
                         <h1 data-reveal>Quantifying risk to engineer <em>safer energy systems</em>.</h1>
                         <p class="hero-lede" data-reveal>I work where process safety meets data — building ALOHA-based
-                            consequence models, machine-learning surrogates, and risk dashboards that turn hazard
-                            physics into faster, safer engineering decisions.</p>
+                            consequence models, machine-learning surrogates, and AI-powered engineering tools that turn
+                            hazard physics into faster, safer engineering decisions.</p>
                         <div class="hero-actions" data-reveal>
                             <a href="#work" class="btn btn-solid">View selected work <span class="arr"
                                     aria-hidden="true">&rarr;</span></a>
@@ -127,7 +127,7 @@
                         </div>
                         <div class="spec">
                             <dt class="mono">Hazard scenarios modeled</dt>
-                            <dd>1,215</dd>
+                            <dd>1,261</dd>
                         </div>
                         <div class="spec">
                             <dt class="mono">Monte Carlo iterations</dt>
@@ -157,14 +157,15 @@
                         <h3 class="block-label mono">Summary</h3>
                         <p class="about-lead">I am a Mechanical Engineering undergraduate at Universitas Pertamina
                             focused on process safety, quantitative risk assessment, and reliability engineering —
-                            with a working data-science toolkit to back it up.</p>
+                            with a BNSP-certified data analysis toolkit to back it up.</p>
                         <p>My thesis develops machine-learning surrogate models that predict n-Hexane tank-overfill
-                            hazard zones from ALOHA simulation outputs, wrapped in a decision-support dashboard. Around
-                            it sit BOP FMEA/RPN risk assessment at Pertamina Drilling, published Human Reliability
-                            Assessment research, statistical modeling of Indonesia&rsquo;s energy transition, and a
-                            suite of reusable engineering calculation tools.</p>
+                            hazard zones from ALOHA simulation outputs, deployed as a live decision-support web app.
+                            Around it sit BOP FMEA/RPN risk assessment at Pertamina Drilling, published Human
+                            Reliability Assessment research, statistical modeling of Indonesia&rsquo;s energy
+                            transition, and AI-powered tools I have built and shipped — from a root-cause-analysis
+                            platform for HSSE teams to an AI bot that automates field inspection reporting.</p>
                         <p>The common thread: take a real safety or reliability question, quantify it honestly, and
-                            give engineers something they can act on.</p>
+                            ship something engineers can actually use.</p>
                     </div>
 
                     <div class="about-side" data-reveal>
@@ -208,18 +209,18 @@
                             aria-label="Open n-Hexane hazard zone project gallery">
                             <span class="rm rm-tl" aria-hidden="true"></span>
                             <span class="rm rm-br" aria-hidden="true"></span>
-                            <img src="assets/images/projects/n-hexane-hazard-zone/dashboard/pasted-1777173393954-0.png"
-                                alt="Decision-support dashboard for n-Hexane hazard zone prediction" loading="lazy"
-                                decoding="async">
-                            <span class="media-hint mono">View gallery [4] &rarr;</span>
+                            <img src="assets/images/projects/n-hexane-hazard-zone/webapp-map-dashboard.jpg"
+                                alt="Live hazard zone web app showing predicted plume zones over a tank farm map"
+                                loading="lazy" decoding="async">
+                            <span class="media-hint mono">View gallery [7] &rarr;</span>
                         </button>
                     </div>
                     <div class="case-body">
                         <p class="case-kicker mono">Case study 01 &mdash; Undergraduate thesis</p>
                         <h3>Hazard zones in seconds, not simulation queues</h3>
                         <p class="case-summary">ALOHA dispersion modeling answers one scenario at a time. For n-Hexane
-                            tank overfill, I built ML surrogates that answer 1,215 of them &mdash; fast enough for risk
-                            screening and emergency planning.</p>
+                            tank overfill, I built ML surrogates that answer 1,261 of them &mdash; then shipped the
+                            result as a live web app with an interactive plume map.</p>
                         <dl class="case-cols">
                             <div>
                                 <dt class="mono">Problem</dt>
@@ -228,24 +229,29 @@
                             </div>
                             <div>
                                 <dt class="mono">Approach</dt>
-                                <dd>Generated a 1,215-scenario full-factorial dataset (stability class, wind,
-                                    temperature, release rate, spill duration, liquid thickness), then trained MLR,
-                                    Random Forest, and ANN surrogates to predict red/orange/yellow LEL zone radii.</dd>
+                                <dd>Generated a 1,261-scenario full-factorial dataset (stability class, wind,
+                                    temperature, release rate, spill duration, liquid thickness), trained MLR, Random
+                                    Forest, and ANN surrogates to predict red/orange/yellow LEL zone radii, and
+                                    stress-tested out-of-distribution robustness across two retraining rounds.</dd>
                             </div>
                             <div>
                                 <dt class="mono">Outcome</dt>
-                                <dd>A validated rapid-prediction workflow plus a decision-support dashboard that
-                                    communicates scenario severity, model comparison, and dominant risk drivers.</dd>
+                                <dd>The ANN surrogate reaches R&sup2; 0.997 (MAE &asymp; 3.5 m across three zones),
+                                    deployed as a Flask web app with an ALOHA-style plume map, batch processing, and
+                                    KML export &mdash; plus a BI dashboard for scenario analytics.</dd>
                             </div>
                         </dl>
                         <ul class="case-facts" role="list">
-                            <li class="mono">1,215 scenarios</li>
-                            <li class="mono">3 model families</li>
+                            <li class="mono">1,261 scenarios</li>
+                            <li class="mono">ANN R&sup2; 0.997</li>
                             <li class="mono">3 LEL zones</li>
-                            <li class="mono">ALOHA ground truth</li>
+                            <li class="mono">Live web app</li>
                         </ul>
                         <p class="case-stack mono">ALOHA &middot; Python &middot; ANN &middot; Random Forest &middot;
-                            MLR &middot; Dashboard</p>
+                            Flask &middot; Leaflet</p>
+                        <a class="case-link" href="https://huggingface.co/spaces/MelioniDas31/AplikasiTugasAkhir"
+                            target="_blank" rel="noopener noreferrer">Try the live app on Hugging Face Spaces <span
+                                class="arr" aria-hidden="true">&#8599;</span></a>
                     </div>
                 </article>
 
@@ -259,7 +265,7 @@
                             <img src="assets/images/projects/energy-transition-indonesia/Picture2.png"
                                 alt="Energy supply forecast for Indonesia, 2000 to 2060" loading="lazy"
                                 decoding="async">
-                            <span class="media-hint mono">View gallery [5] &rarr;</span>
+                            <span class="media-hint mono">View gallery [8] &rarr;</span>
                         </button>
                     </div>
                     <div class="case-body">
@@ -352,9 +358,42 @@
                     <h3 class="bench-title mono" data-reveal>Further projects &amp; research</h3>
                     <div class="bench-grid">
                         <article class="proj" data-reveal>
+                            <button type="button" class="cover-btn" data-project="analisis-aja"
+                                aria-label="Open project details: Analisis.Aja AI root-cause analysis platform"></button>
+                            <p class="proj-index mono">P&ndash;04</p>
+                            <h4>Analisis.Aja &mdash; AI root-cause analysis platform</h4>
+                            <p>Web platform that turns raw work documents into structured 5&nbsp;Why, Fishbone, and RCA
+                                reports for HSSE/QA teams &mdash; evidence-based AI extraction with strict separation
+                                of facts, assumptions, and missing information.</p>
+                            <p class="proj-meta mono">AI product &middot; Next.js &middot; Claude &amp; Gemini</p>
+                            <span class="proj-arrow" aria-hidden="true">&rarr;</span>
+                        </article>
+                        <article class="proj" data-reveal>
+                            <button type="button" class="cover-btn" data-project="mwt-rekap-bot"
+                                aria-label="Open project details: MWT inspection report automation bot"></button>
+                            <p class="proj-index mono">P&ndash;05</p>
+                            <h4>AI bot for MWT inspection reporting</h4>
+                            <p>Telegram bot that turns free-form field reports &mdash; text, photos, voice notes
+                                &mdash; into structured Management Walkthrough records in Google Sheets, built for a
+                                Pertamina field-operations use case.</p>
+                            <p class="proj-meta mono">AI automation &middot; Gemini &middot; Whisper &middot;
+                                serverless</p>
+                            <span class="proj-arrow" aria-hidden="true">&rarr;</span>
+                        </article>
+                        <article class="proj" data-reveal>
+                            <button type="button" class="cover-btn" data-project="prompt-aja"
+                                aria-label="Open project details: prompt.aja AI visual content platform"></button>
+                            <p class="proj-index mono">P&ndash;06</p>
+                            <h4>prompt.aja &mdash; AI visual content platform</h4>
+                            <p>Full-stack SaaS for generating social-media-ready images and videos: 10 AI models, an
+                                atomic credit system, prompt enhancement, and content safety filtering.</p>
+                            <p class="proj-meta mono">AI SaaS &middot; Next.js &middot; Supabase &middot; Replicate</p>
+                            <span class="proj-arrow" aria-hidden="true">&rarr;</span>
+                        </article>
+                        <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="cnc-failure-identification"
                                 aria-label="Open project details: CNC failure identification"></button>
-                            <p class="proj-index mono">P&ndash;04</p>
+                            <p class="proj-index mono">P&ndash;07</p>
                             <h4>CNC failure identification with machine learning</h4>
                             <p>Model comparison for machine-condition classification &mdash; Random Forest, XGBoost,
                                 logistic regression, and ANN &mdash; with per-class F1 and overfitting diagnostics.</p>
@@ -364,7 +403,7 @@
                         <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="excel-engineering-templates"
                                 aria-label="Open project details: Excel engineering calculation suite"></button>
-                            <p class="proj-index mono">P&ndash;05</p>
+                            <p class="proj-index mono">P&ndash;08</p>
                             <h4>Excel engineering calculation suite</h4>
                             <p>Reusable templates for TNT explosion blast, pool fire, and source-emission calculations
                                 &mdash; engineering equations turned into practical screening tools.</p>
@@ -374,7 +413,7 @@
                         <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="perovskite-halide"
                                 aria-label="Open project details: Perovskite halide fluorescent taggant"></button>
-                            <p class="proj-index mono">P&ndash;06</p>
+                            <p class="proj-index mono">P&ndash;09</p>
                             <h4>Perovskite halide as fluorescent taggant</h4>
                             <p>Feasibility study of fluorescent taggants for oil &amp; gas leak detection and pipeline
                                 monitoring &mdash; technical, economic, and regulatory analysis.</p>
@@ -384,7 +423,7 @@
                         <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="hero-helmets"
                                 aria-label="Open project details: HERO Helmets bio-composite safety helmet"></button>
-                            <p class="proj-index mono">P&ndash;07</p>
+                            <p class="proj-index mono">P&ndash;10</p>
                             <h4>HERO Helmets: bio-composite safety helmet</h4>
                             <p>Water-hyacinth-fiber biocomposite helmet prototype with vacuum-infusion manufacturing
                                 and impact/tensile testing. Team leader.</p>
@@ -394,7 +433,7 @@
                         <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="hvac-design"
                                 aria-label="Open project details: HVAC system design and LCA"></button>
-                            <p class="proj-index mono">P&ndash;08</p>
+                            <p class="proj-index mono">P&ndash;11</p>
                             <h4>HVAC system design &amp; life-cycle assessment</h4>
                             <p>Cooling-load analysis (1,020.8 kW peak), Chiller vs RTU comparison, and embodied vs
                                 operational carbon assessment. Project leader.</p>
@@ -404,7 +443,7 @@
                         <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="autonomous-trash-bin"
                                 aria-label="Open project details: Autonomous trash bin"></button>
-                            <p class="proj-index mono">P&ndash;09</p>
+                            <p class="proj-index mono">P&ndash;12</p>
                             <h4>Autonomous trash bin</h4>
                             <p>Line-follower waste-management robot with IR navigation, ultrasonic sensing, and servo
                                 actuation. Capstone project leader.</p>
@@ -414,7 +453,7 @@
                         <article class="proj" data-reveal>
                             <button type="button" class="cover-btn" data-project="electric-oven"
                                 aria-label="Open project details: Low-cost electric oven prototype"></button>
-                            <p class="proj-index mono">P&ndash;10</p>
+                            <p class="proj-index mono">P&ndash;13</p>
                             <h4>Low-cost electric oven prototype</h4>
                             <p>Composite-insulated oven built from upcycled heating elements to study heating rate and
                                 thermal retention.</p>
@@ -578,6 +617,22 @@
                             <p class="applied mono">Applied in: HVAC &amp; LCA &middot; HERO Helmets &middot; org
                                 design work</p>
                         </div>
+                        <div class="skill-cluster" data-reveal>
+                            <h3 class="mono">E &mdash; AI engineering &amp; automation</h3>
+                            <ul class="chiplist" role="list">
+                                <li>LLM integration (Claude, Gemini, Whisper)</li>
+                                <li>Prompt engineering</li>
+                                <li>Telegram bots</li>
+                                <li>Next.js</li>
+                                <li>Supabase</li>
+                                <li>Flask</li>
+                                <li>Serverless (Netlify)</li>
+                                <li>Hugging Face Spaces</li>
+                                <li>n8n</li>
+                            </ul>
+                            <p class="applied mono">Applied in: Analisis.Aja &middot; MWT bot &middot; prompt.aja
+                                &middot; thesis web app</p>
+                        </div>
                     </div>
 
                     <aside class="achievements" data-reveal>
@@ -634,6 +689,19 @@
                 </header>
 
                 <div class="cred-grid">
+                    <article class="cred-card" data-reveal>
+                        <div class="cred-media">
+                            <img src="assets/images/credentials/credential BNSP.png"
+                                alt="BNSP technical competency statement, Data Analyst, M. Zaki Ramdhan"
+                                loading="lazy" decoding="async">
+                        </div>
+                        <div class="cred-body">
+                            <p class="cred-tag mono">National certification</p>
+                            <h3>BNSP &mdash; Data Analyst</h3>
+                            <p>Declared Kompeten by LSP Digital Kreatif Solusi under the BNSP national certification
+                                scheme, 27 April 2026.</p>
+                        </div>
+                    </article>
                     <article class="cred-card" data-reveal>
                         <div class="cred-media">
                             <img src="assets/images/credentials/Certificate of Excellence Brainacademy.png"
@@ -700,8 +768,8 @@
                     <div class="contact-actions">
                         <a class="btn btn-solid" href="mailto:zakiramdhan2003@gmail.com">zakiramdhan2003@gmail.com
                             <span class="arr" aria-hidden="true">&rarr;</span></a>
-                        <a class="btn btn-line" href="https://wa.me/qr/E2YB3YHXCZC3G1" target="_blank"
-                            rel="noopener noreferrer">WhatsApp +62 819-9273-0349 <span class="arr"
+                        <a class="btn btn-line" href="https://wa.me/6288294564591" target="_blank"
+                            rel="noopener noreferrer">WhatsApp +62 882-9456-4591 <span class="arr"
                                 aria-hidden="true">&#8599;</span></a>
                     </div>
                     <ul class="contact-links" role="list">
@@ -752,7 +820,7 @@
         </div>
     </div>
 
-    <script src="assets/js/script.js?v=dossier-1"></script>
+    <script src="assets/js/script.js?v=dossier-2"></script>
 </body>
 
 </html>

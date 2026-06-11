@@ -10,17 +10,84 @@ document.addEventListener('DOMContentLoaded', () => {
             description: `
                 <p><strong>Focus:</strong> rapid hazard-zone prediction for n-Hexane tank overfill scenarios using ALOHA simulation outputs as ground truth.</p>
                 <ul>
-                    <li>Built a dataset of 1,215 full-factorial scenarios covering atmospheric stability, wind speed, temperature, release rate, effective spill duration, and liquid thickness.</li>
-                    <li>Modeled red, orange, and yellow LEL-based hazard-zone radii using Multiple Linear Regression, Random Forest, and Artificial Neural Network approaches.</li>
-                    <li>Developed a dashboard-style decision-support interface communicating scenario severity, model comparison, and dominant risk drivers.</li>
-                    <li>Positioned the workflow for rapid risk screening, emergency response planning, and process safety decision support.</li>
+                    <li>Built a dataset of 1,261 full-factorial scenarios covering atmospheric stability, wind speed, temperature, release rate, effective spill duration, and liquid thickness.</li>
+                    <li>Modeled red, orange, and yellow LEL-based hazard-zone radii with MLR, Random Forest, and ANN — the ANN surrogate reaches R² 0.997 with MAE ≈ 3.5 m across the three zones.</li>
+                    <li>Stress-tested out-of-distribution robustness (wind and temperature beyond the training range) and retrained across two revision rounds to close the gaps.</li>
+                    <li>Shipped as a Flask web app with an interactive ALOHA-style plume map (Leaflet), batch CSV/Excel processing, and KML export — plus a separate BI dashboard for scenario analytics.</li>
+                </ul>
+            `,
+            link: {
+                href: 'https://huggingface.co/spaces/MelioniDas31/AplikasiTugasAkhir',
+                label: 'Try the live app on Hugging Face Spaces'
+            },
+            images: [
+                'assets/images/projects/n-hexane-hazard-zone/webapp-map-dashboard.jpg',
+                'assets/images/projects/n-hexane-hazard-zone/dashboard/pasted-1777173393954-0.png',
+                'assets/images/projects/n-hexane-hazard-zone/dashboard/pasted-1777173398947-0.png',
+                'assets/images/projects/n-hexane-hazard-zone/webapp-distribusi-data.png',
+                'assets/images/projects/n-hexane-hazard-zone/learning-curve.png',
+                'assets/images/projects/n-hexane-hazard-zone/Flowchart Thesis Tugas akhir.png',
+                'assets/images/projects/n-hexane-hazard-zone/correlation_heatmap tesis.png'
+            ]
+        },
+        'analisis-aja': {
+            title: 'Analisis.Aja — AI Root-Cause Analysis Platform',
+            role: 'AI product — built end-to-end for HSSE/QA problem analysis',
+            description: `
+                <p><strong>Focus:</strong> turning raw work documents (PDF, DOCX, Excel, free text) into structured, professional problem-analysis reports.</p>
+                <ul>
+                    <li>Three analysis methods: 5 Why, Fishbone/Ishikawa (6M, HSSE, and Office presets), and a full 10-section RCA report.</li>
+                    <li>Evidence-based pipeline: document parsing → AI evidence extraction → analysis engine, with strict separation of verified facts, assumptions, and missing information.</li>
+                    <li>Every AI output is schema-validated before it reaches the report, with a full audit trail of each AI run.</li>
+                    <li>Built with Next.js + TypeScript, Claude and Gemini as analysis engines, and a credit-based usage system.</li>
                 </ul>
             `,
             images: [
-                'assets/images/projects/n-hexane-hazard-zone/dashboard/pasted-1777173393954-0.png',
-                'assets/images/projects/n-hexane-hazard-zone/dashboard/pasted-1777173398947-0.png',
-                'assets/images/projects/n-hexane-hazard-zone/Flowchart Thesis Tugas akhir.png',
-                'assets/images/projects/n-hexane-hazard-zone/correlation_heatmap tesis.png'
+                'assets/images/projects/analisis-aja/dashboard.png',
+                'assets/images/projects/analisis-aja/landing.png',
+                'assets/images/projects/analisis-aja/pilih-metode.png',
+                'assets/images/projects/analisis-aja/wizard.png',
+                'assets/images/projects/analisis-aja/laporan-5why-1.png',
+                'assets/images/projects/analisis-aja/laporan-5why-2.png',
+                'assets/images/projects/analisis-aja/laporan-5why-3.png'
+            ]
+        },
+        'mwt-rekap-bot': {
+            title: 'AI Bot for MWT Inspection Reporting',
+            role: 'AI automation — Pertamina field-operations use case',
+            description: `
+                <p><strong>Focus:</strong> eliminating manual data entry for Management Walkthrough (MWT) inspection reports.</p>
+                <ul>
+                    <li>Field inspectors send free-form reports to a Telegram bot — plain text, photos, or voice notes in operational Indonesian.</li>
+                    <li>Voice notes are transcribed with Whisper; Gemini extracts the structured record (inspector, finding, recommendation, PIC, status) and asks clarifying questions when required fields are missing.</li>
+                    <li>Evidence photos are uploaded to Google Drive and each report lands as a numbered row in Google Sheets — no manual rekap.</li>
+                    <li>Deployed as serverless functions (Netlify) with webhook-based Telegram integration.</li>
+                </ul>
+            `,
+            images: [
+                'assets/images/projects/mwt-rekap-bot/telegram-report.png',
+                'assets/images/projects/mwt-rekap-bot/telegram-report-2.png',
+                'assets/images/projects/mwt-rekap-bot/sheet-rekap.png',
+                'assets/images/projects/mwt-rekap-bot/sheet-rekap-2.png',
+                'assets/images/projects/mwt-rekap-bot/flowchart.jpg'
+            ]
+        },
+        'prompt-aja': {
+            title: 'prompt.aja — AI Visual Content Platform',
+            role: 'AI SaaS — full-stack MVP, designed, built & deployed',
+            description: `
+                <p><strong>Focus:</strong> a one-stop platform for generating social-media-ready visual content with AI.</p>
+                <ul>
+                    <li>Five image models and five video models (text-to-image, image-to-image, text-to-video, motion transfer, lip sync) served through one interface.</li>
+                    <li>Credit system with atomic deduct/refund transactions, plan tiers, and full generation history.</li>
+                    <li>AI prompt enhancer, content safety filtering across 18+ categories, rate limiting, and webhook + polling job handling.</li>
+                    <li>Built with Next.js 15 + TypeScript, Supabase (auth, database, storage), and Replicate — deployed on Netlify.</li>
+                </ul>
+            `,
+            images: [
+                'assets/images/projects/prompt-aja/landing.jpg',
+                'assets/images/projects/prompt-aja/dashboard-user.jpg',
+                'assets/images/projects/prompt-aja/history.jpg'
             ]
         },
         'energy-transition-indonesia': {
@@ -37,6 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             images: [
                 'assets/images/projects/energy-transition-indonesia/Picture2.png',
+                'assets/images/projects/energy-transition-indonesia/mc-distribution-2025.png',
+                'assets/images/projects/energy-transition-indonesia/mc-prob-78pct-2030-2060.png',
+                'assets/images/projects/energy-transition-indonesia/mc-sensitivity-2025.png',
                 'assets/images/projects/energy-transition-indonesia/pasted-1777173495236-0.png',
                 'assets/images/projects/energy-transition-indonesia/pasted-1777173562225-1.png',
                 'assets/images/projects/energy-transition-indonesia/Picture1.png',
@@ -85,16 +155,19 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'cnc-failure-identification': {
             title: 'Machine Learning for CNC Failure Identification',
-            role: 'AI engineering bootcamp capstone — predictive maintenance',
+            role: 'AI engineering bootcamp capstone — graded 95/A (Certificate of Excellence)',
             description: `
-                <p><strong>Focus:</strong> machine learning model comparison for CNC machine condition and failure identification.</p>
+                <p><strong>Focus:</strong> machine learning model comparison for CNC machine condition and failure identification on the AI4I 2020 dataset (10,000 sensor records, 5 failure classes).</p>
                 <ul>
-                    <li>Performed data preprocessing, train-test splitting, model training, and evaluation for machine failure classification.</li>
-                    <li>Compared models including Random Forest, XGBoost, Logistic Regression, and ANN/MLP.</li>
-                    <li>Evaluated performance with accuracy, macro F1-score, per-class F1 heatmaps, and train-test overfitting diagnostics.</li>
-                    <li>Connected the output to predictive maintenance, manufacturing analytics, and reliability decision support.</li>
+                    <li>Handled severe class imbalance with SMOTE, then compared Decision Tree, Random Forest, XGBoost, and ANN/MLP.</li>
+                    <li>XGBoost selected on test performance (98% accuracy) with per-class F1 heatmaps and train-test overfitting diagnostics.</li>
+                    <li>Deployed as an interactive Streamlit dashboard with physics-informed EDA, single prediction with handling recommendations, and batch CSV prediction.</li>
                 </ul>
             `,
+            link: {
+                href: 'https://huggingface.co/spaces/MelioniDas31/CapstoneBrainAcademy',
+                label: 'Open the Streamlit dashboard on Hugging Face Spaces'
+            },
             images: [
                 'assets/images/projects/cnc-failure-identification/04_train_vs_test_overfitting.png',
                 'assets/images/projects/cnc-failure-identification/02_f1_heatmap_per_class.png',
