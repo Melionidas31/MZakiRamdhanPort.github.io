@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'mwt-rekap-bot': {
             title: 'AI Bot for MWT Inspection Reporting',
-            role: 'AI automation — Pertamina field-operations use case',
+            role: 'Client project — commissioned for Pertamina field operations',
             description: `
-                <p><strong>Focus:</strong> eliminating manual data entry for Management Walkthrough (MWT) inspection reports.</p>
+                <p><strong>Focus:</strong> eliminating manual data entry for Management Walkthrough (MWT) inspection reports — commissioned by a Pertamina professional, delivered and running.</p>
                 <ul>
                     <li>Field inspectors send free-form reports to a Telegram bot — plain text, photos, or voice notes in operational Indonesian.</li>
                     <li>Voice notes are transcribed with Whisper; Gemini extracts the structured record (inspector, finding, recommendation, PIC, status) and asks clarifying questions when required fields are missing.</li>
